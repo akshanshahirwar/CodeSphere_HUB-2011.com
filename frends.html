@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My AND FRIENDS YouTube Channels</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            margin: 20px;
+            background: linear-gradient(45deg, #3498db, #e74c3c);
+            color: #fff;
+            animation: backgroundAnimation 10s infinite alternate;
+        }
+
+        @keyframes backgroundAnimation {
+            from {
+                background: linear-gradient(45deg, #3498db, #e74c3c);
+            }
+
+            to {
+                background: linear-gradient(45deg, #2ecc71, #f39c12);
+            }
+        }
+
+        h1 {
+            text-align: center;
+            margin-bottom: 30px;
+        }
+
+        .channel-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            opacity: 0;
+            /* Set initial opacity to 0 for the fade-in effect */
+            animation: fadeIn 1s ease-out forwards;
+        }
+
+        @keyframes fadeIn {
+            from {
+                opacity: 0;
+            }
+
+            to {
+                opacity: 1;
+            }
+        }
+
+        .channel-row {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: space-around;
+            width: 100%;
+        }
+
+        .channel-card {
+            max-width: 300px;
+            border: 1px solid #ddd;
+            padding: 10px;
+            border-radius: 8px;
+            background-color: rgba(255, 255, 255, 0.8);
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            text-align: center;
+            transition: transform 0.3s ease-in-out, box-shadow 0.3s ease-in-out;
+            margin-bottom: 20px;
+        }
+
+        .channel-card:hover {
+            transform: scale(1.05);
+            box-shadow: 0 0 20px rgba(0, 0, 0, 0.2);
+        }
+
+        .channel-card img {
+            max-width: 100%;
+            border-radius: 5px;
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .channel-card:hover img {
+            transform: scale(1.1);
+        }
+
+        .channel-card h2 {
+            color: #555;
+            margin-top: 10px;
+        }
+
+        .channel-card p {
+            color: #777;
+        }
+
+        .channel-card a {
+            display: block;
+            margin-top: 15px;
+            padding: 8px 12px;
+            background-color: #4285f4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .channel-card a:hover {
+            background-color: #2557a7;
+        }
+
+        /* Home button styles */
+        .home-button {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            padding: 10px 15px;
+            background-color: #4285f4;
+            color: #fff;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s ease-in-out;
+        }
+
+        .home-button:hover {
+            background-color: #2557a7;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>My YouTube Channels</h1>
+
+    <div class="channel-container">
+        <div class="channel-row">
+            <div class="channel-card">
+                <img src="codesphere_hub.jpeg" alt="@CodeSphere_HUB2011">
+                <h2>@CodeSphere_HUB2011</h2>
+                <p>Description of Channel 1.</p>
+                <a href="https://youtube.com/@CodeSphere_hub2011?si=5-8VNw81_yxRIOY6" target="_blank">Visit Channel</a>
+            </div>
+
+            <div class="channel-card">
+                <img src="HARSH.PNG" style="height: 65%; width: 100%;" alt="Harshsketcher">
+                <h2>Harshsketcher</h2>
+                <p>So hey guys I'm harsh sengar of grade 7th and I'm small artists </p>
+                <a href="https://www.youtube.com/@Harshsketcher" target="_blank">Visit Channel</a>
+            </div>
+
+            <div class="channel-card">
+                <img src="ABHA.Y.PNG" alt="@ARVSGAMING199">
+                <h2>@ARVSGAMING199</h2>
+                <p>PLAY GAMES LIKE: GTA5,ROBLOX,MINECRAFT,ETC</p>
+                <a href="https://www.youtube.com/@arvsgaming119" target="_blank">Visit Channel</a>
+            </div>
+        </div>
+
+        <div class="channel-row">
+            <div class="channel-card">
+                <img src="JOYY.jpg" alt="JOY_YT">
+                <h2>JOY_YT</h2>
+                <p>Description of Channel 4.</p>
+                <a href="https://www.youtube.com/@sanskritikapatidar5613" target="_blank">Visit Channel</a>
+            </div>
+
+            <div class="channel-card">
+                <img src="COMINGSOON.jpg" alt="COMING SOON">
+                <h2>COMING SOON!</h2>
+                <p>COMING SOON!</p>
+                <a href="https://www.youtube.com/watch?v=sfV4oT_HfdE" target="_blank">Visit
+                    Channel</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- Home button -->
+    <a href="index.html" class="home-button">Home</a>
+</body>
+
+</html>
